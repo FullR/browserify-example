@@ -1,0 +1,16 @@
+{
+  "name": "browserify-example",
+  "version": "0.0.1",
+  "scripts": {
+    "build": "browserify client/entry.js > public/bundle.js",
+    "start": "node server/entry.js",
+    "go": "npm run build && npm run start"
+  },
+  "devDependencies": {
+    "browserify": "^12.0.1"
+  },
+  "dependencies": {
+    "express": "^4.13.3",
+    "superagent": "^1.5.0"
+  }
+}
